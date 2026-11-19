@@ -27,7 +27,7 @@
 | Field | Details |
 |---|---|
 | **Project** | Week 3 – Password Cracking |
-| **Project Title** | Password Cracking Using John the Ripper & NetworkWalks Web-Based Tools |
+| **Project Title** | PDF Password Cracking Using John the Ripper & NetworkWalks Web-Based Tools |
 | **Intern Name** | S Bhanu Prakash |
 | **Program** | NetworkWalks Cybersecurity Internship |
 | **Modules Completed** | Module 1 – John the Ripper (Johnny GUI) · Module 2 – NetworkWalks Web Tools |
@@ -58,7 +58,7 @@ Both modules show how weak PDF passwords can be identified through dictionary-ba
 
 ---
 
-# 🧩 MODULE 1 – Password Cracking Using John the Ripper
+# 🧩 MODULE 1 – PDF Password Cracking Using John the Ripper
 
 ## 1. Introduction
 
@@ -77,23 +77,25 @@ John the Ripper is an open-source password auditing and recovery tool. It suppor
 
 ## 3. Methodology
 
+I repeated the same workflow for all three protected training PDFs (`My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`).
+
 **Step 1 – Obtain the protected PDF**
-Downloaded the password-protected training PDF (`My Locked PDF1.pdf`) provided for the exercise.
+Downloaded each password-protected training PDF provided for the exercise.
 
 **Step 2 – Extract the PDF hash**
-Used an online PDF hash extractor (pdf2john/pdf2hashcat-compatible) to convert the encrypted PDF into a crackable `$pdf$` hash.
+Used an online PDF hash extractor (pdf2john/pdf2hashcat-compatible) to convert each encrypted PDF into a crackable `$pdf$` hash.
 
 **Step 3 – Save the extracted hash**
-Saved the extracted hash into a text file (`passhash`) in `~/Downloads` for processing by John the Ripper.
+Saved each extracted hash into a text file (`passhash`) in `~/Downloads` for processing by John the Ripper.
 
 **Step 4 – Launch Johnny GUI**
-Opened Johnny in Kali Linux and loaded the saved hash file as a new password file.
+Opened Johnny in Kali Linux and loaded each saved hash file as a new password file.
 
 **Step 5 – Perform the dictionary attack**
-Started the attack using a wordlist. Johnny worked through the candidate passwords and flagged a match.
+Started the attack using a wordlist for each hash. Johnny worked through the candidate passwords and flagged a match in every case.
 
 **Step 6 – Verify the recovered password**
-Opened the original protected PDF using the recovered password and confirmed the document unlocked successfully.
+Opened each original protected PDF using its recovered password and confirmed the document unlocked successfully.
 
 ## 4. Result
 
@@ -112,12 +114,44 @@ nw{cybersecurity_flag_captured_2608}
 ```
 </details>
 
+<details>
+<summary><b>PDF 2 – Password Recovery Result</b></summary>
+
+- **PDF:** `My Locked PDF2.pdf`
+- **Cracking interface:** Johnny GUI
+- **Recovered password:** `password1`
+- **Status:** ✅ Successfully recovered
+- **Verification:** Original PDF opened successfully
+
+**Captured Flag:**
+```text
+nw{networkwalks_persistence_jtr_270521}
+```
+</details>
+
+<details>
+<summary><b>PDF 3 – Password Recovery Result</b></summary>
+
+- **PDF:** `My Locked PDF3.pdf`
+- **Cracking interface:** Johnny GUI
+- **Recovered password:** `1qaz2wsx`
+- **Status:** ✅ Successfully recovered
+- **Verification:** Original PDF opened successfully
+
+**Captured Flag:**
+```text
+nw{networkwalks_flag_260821_1}
+```
+</details>
+
 **Screenshot / Evidence:**
 
-![PDF hash extracted via online hash calculator](online-hash-calculator.png)
+![PDF1 hash extracted via online hash calculator](online-hash-calculator.png)
 ![Extracted hash saved to a text file in Kali](passhash-mousepad.png)
-![Johnny GUI showing the hash cracked to 100%](johnny-cracked.png)
+![Johnny GUI showing PDF1's hash cracked to 100%](johnny-cracked.png)
 ![PDF1 opened successfully with the recovered password, showing the captured flag](pdf1-flag.png)
+![PDF2 opened successfully with the recovered password, showing the captured flag](pdf2-flag.png)
+![PDF3 opened successfully with the recovered password, showing the captured flag](pdf3-flag.png)
 
 ---
 
@@ -176,6 +210,22 @@ Entered the recovered password into the original PDF and confirmed it opened suc
 ## 4. Results – PDF Password Recovery
 
 Three separate PDF documents were successfully recovered across the two modules.
+
+### PDF 1 – My Locked PDF1.pdf
+
+| Parameter | Result |
+|---|---|
+| Extracted hash | ✅ Successful |
+| Recovered password | `good-luck` |
+| Cracking status | ✅ Successful |
+| PDF verification | ✅ Successful |
+
+**Captured Flag:**
+```text
+nw{cybersecurity_flag_captured_2608}
+```
+
+![PDF1 opened successfully with the recovered password, showing the captured flag](pdf1-flag.png)
 
 ### PDF 2 – My Locked PDF2.pdf
 
@@ -243,6 +293,7 @@ $pdf$4*4*128*-1028*1*16*34eb542eff4e1b0b32d25ce15a9a7281*32*b77872bfc9a24fb2f845
 
 | Feature | Module 1 – JTR | Module 2 – Web Tools |
 |---|---|---|
+| PDFs cracked | 3 (PDF1, PDF2, PDF3) | 3 (PDF1, PDF2, PDF3) |
 | Environment | Kali Linux | Web browser |
 | Hash extraction | Online PDF hash extractor | NetworkWalks Hash Calculator |
 | Password recovery | John the Ripper | NetworkWalks Password Cracker |
@@ -318,13 +369,6 @@ LinkedIn: [https://www.linkedin.com/in/s-bhanu-prakash/](https://www.linkedin.co
 
 ## 📌 Project Information
 
-**Program Name:** Cybersecurity at Networkwalks | **Week:** 03 | **Project:** Password Cracking With JTR | **Repository:** GitHub
-
-
-<div align="center">
-
-### Learning • Practicing • Securing
-
-**Cybersecurity is best learned through hands-on practice.**
+**Program Name:** Cybersecurity at Networkwalks | **Week:** 03 | **Project:** Password Cracking | **Repository:** GitHub
 
 </div>
