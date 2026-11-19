@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Focus-Password%20Auditing%20%26%20Recovery-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Modules-1-2-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Modules12-238F89?style=flat-square&labelColor=000000" />
   <img src="https://img.shields.io/badge/NetworkWalks-Internship-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/GitHub-Project-181717?style=flat-square&logo=github&logoColor=white" />
 </p>
