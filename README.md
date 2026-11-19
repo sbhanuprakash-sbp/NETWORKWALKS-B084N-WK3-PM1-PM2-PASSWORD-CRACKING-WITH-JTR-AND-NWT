@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Focus-Password%20Auditing%20%26%20Recovery-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Modules-2-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Modules-1-2-238F89?style=flat-square&labelColor=000000" />
   <img src="https://img.shields.io/badge/NetworkWalks-Internship-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/GitHub-Project-181717?style=flat-square&logo=github&logoColor=white" />
 </p>
@@ -356,13 +356,12 @@ Password-cracking tools should only be used on files and systems you own or have
 
 ---
 
-## 👨‍💻 Author
+# 👤 Author
 
-**S Bhanu Prakash**
-B.Tech – Computer Science and Engineering
-Cybersecurity Student | NetworkWalks Cybersecurity Intern(B084N)
+**S Bhanu Prakash**\
+B.Tech Student | Cybersecurity Intern, Networkwalks (Batch B084N) 
 
-GitHub: [https://github.com/sbhanuprakash-sbp](https://github.com/sbhanuprakash-sbp)
+GitHub: [https://github.com/sbhanuprakash-sbp](https://github.com/sbhanuprakash-sbp)\
 LinkedIn: [https://www.linkedin.com/in/s-bhanu-prakash/](https://www.linkedin.com/in/s-bhanu-prakash/)
 
 ---
